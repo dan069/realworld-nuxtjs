@@ -1,5 +1,4 @@
-import { request } from '@/plugins/request'
-
+import { request } from '@/plugins/request';
 
 // 用户登录
 export const login = data => {
@@ -7,7 +6,7 @@ export const login = data => {
     method: 'POST',
     url: '/api/users/login',
     data
-  })
+  });
 }
 
 // 用户注册
@@ -16,5 +15,5 @@ export const register = data => {
     method: 'POST',
     url: '/api/users',
     data
-  })
+  });
 }

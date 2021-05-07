@@ -1,22 +1,19 @@
-/**
- * Nuxt.js 配置文件
- */
+// nuxt配置文件
 
 module.exports = {
   router: {
     linkActiveClass: 'active',
     // 自定义路由表规则
     extendRoutes (routes, resolve) {
-      // 清除 Nuxt.js 基于 pages 目录默认生成的路由表规则
-      routes.splice(0)
-
+      // 清除nuxt基于pages目录默认生成的路由表规则
+      routes.splice(0);
       routes.push(...[
         {
           path: '/',
           component: resolve(__dirname, 'pages/layout/'),
           children: [
             {
-              path: '', // 默认子路由
+              path: '',
               name: 'home',
               component: resolve(__dirname, 'pages/home/')
             },
@@ -55,15 +52,12 @@ module.exports = {
       ])
     }
   },
-
   server: {
     host: '0.0.0.0',
     port: 3000
   },
-
-  // 注册插件
   plugins: [
     '~/plugins/request.js',
-    '~/plugins/dayjs.js'
+    '~/plugins/dayjs.js',
   ]
 }
