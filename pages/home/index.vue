@@ -3,7 +3,7 @@
 		<div class="banner">
 			<div class="container">
 				<h1 class="logo-font">试试</h1>
-				<p>A place to share your knowledge.</p>
+				<p>真的不行吗？</p>
 			</div>
 		</div>
 
